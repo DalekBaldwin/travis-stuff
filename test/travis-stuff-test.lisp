@@ -6,7 +6,7 @@
 
 (deftest test-acceptable-variable-names ()
   (is 
-   #.(let* ((sym-list '(.x -x /x +x *x _ @ ! = { } [ ] & $ ~ % ? < >))
+   #.(let* ((sym-list '(.x -x /x +x *x 0x ^ _ @ ! = { } [ ] & $ ~ % ? < >))
             (len (length sym-list)))
        `(equal
          (destructuring-bind ,sym-list
