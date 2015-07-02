@@ -4,6 +4,8 @@
 
 (defsuite* test-all)
 
+(error "barf")
+
 (deftest test-acceptable-variable-names ()
   (is 
    #.(let* ((sym-list '(.x -x /x +x *x 0x ^ _ @ ! = { } [ ] & $ ~ % ? < >))
