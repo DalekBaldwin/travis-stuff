@@ -13,7 +13,7 @@
             :components ((:file "package")
                          (:file "travis-stuff"))
             :serial t))
-  :depends-on ()
+  :depends-on (:alexandria)
   :in-order-to ((test-op (load-op :travis-stuff-test)))
   :perform (test-op :after (op c)
                     (funcall
