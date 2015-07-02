@@ -31,4 +31,4 @@ script:
                     (declare (ignore h))
                     (print c t)
                     (uiop:quit -1))))
-             (travis-stuff:test-all))'
+             (travis-stuff-test:test-all))'
