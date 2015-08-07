@@ -24,8 +24,8 @@ install:
 
 script:
   - cl -e '(in-package :cl-user)'
-       -e '(ql:quickload :travis-stuff :verbose t)'
-       -e '(ql:quickload :travis-stuff-test :verbose t)'
+       -e '(ql:quickload :travis-stuff)'
+       -e '(ql:quickload :travis-stuff-test)'
        -e '(setf *debugger-hook*
                  (lambda (c h)
                    (declare (ignore h))
